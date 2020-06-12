@@ -1,0 +1,96 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+body {
+  font-family: "lato", sans-serif;
+  font-size: 14px;
+  color: #25373f;
+}
+a {
+  color: #25373f;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+  color: #009933;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 36px;
+}
+h4 {
+  font-size: 24px;
+}
+.form-control {
+  padding: 5px 0;
+  height: auto;
+  font-size: 13px;
+  border-color: #e4e4e4;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.form-control.DOB {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.form-error-label {
+  margin: 8px 0 0 0;
+  color: red;
+}
+.form-group {
+  margin-bottom: 30px;
+}
+.form-label {
+  color: #4e4e4e;
+  text-transform: capitalize;
+  font-size: 13px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  letter-spacing: 0.3px;
+}
+#header {
+  padding: 20px 0 50px;
+}
+#header img {
+  width: 140px;
+}
+.registrationForm {
+  width: 100%;
+}
+.formWrapper.reg {
+  max-width: 470px;
+  padding: 40px;
+  margin: 0 auto;
+}
+.formWrapper.reg.reg {
+  box-shadow: 9px 9px 18px rgba(0, 0, 0, 0.075);
+}
+.formWrapper.reg.reg .form-label {
+  display: none;
+}
+.formWrapper.reg input[type="date"] {
+  line-height: inherit;
+}
+h2 {
+  margin-bottom: 30px;
+}
+.buttonArea {
+  margin-top: 30px;
+}

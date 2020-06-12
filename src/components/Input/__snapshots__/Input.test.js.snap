@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`>>> Input Container -- Snapshot Test Matches the snapshot with custom props 1`] = `
+<form
+  action=""
+  autoComplete="off"
+  className="form"
+>
+  <div
+    className="undefined undefined"
+  >
+    <input
+      className="undefined   undefined"
+      id="email"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="custom placeholder"
+      type="text"
+      validate="required"
+      value="123"
+    />
+    <div
+      className="error-class"
+    />
+  </div>
+</form>
+`;
+
+exports[`>>> Input Container -- Snapshot Test Matches the snapshot with default props 1`] = `
+<form
+  action=""
+  autoComplete="off"
+  className="form"
+>
+  <div
+    className="form-group "
+  >
+    <input
+      className="form-control   "
+      id="email"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <div
+      className="form-error-label"
+    />
+  </div>
+</form>
+`;
+
+exports[`>>> Input Container -- Snapshot Test Matches the snapshot with predefined value 1`] = `
+<form
+  action=""
+  autoComplete="off"
+  className="form"
+>
+  <div
+    className="form-group "
+  >
+    <input
+      className="form-control   "
+      id="email"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <div
+      className="form-error-label"
+    />
+  </div>
+</form>
+`;

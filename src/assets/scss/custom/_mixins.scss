@@ -1,0 +1,37 @@
+@mixin MQ($canvas) {
+  @if $canvas == S {
+    @media only screen and (min-width: $S) {
+      @content;
+    }
+  } @else if $canvas == M {
+    @media only screen and (min-width: $M) {
+      @content;
+    }
+  } @else if $canvas == L {
+    @media only screen and (min-width: $L) {
+      @content;
+    }
+  }@else if $canvas == max-L {
+    @media only screen and (max-width: $L) {
+      @content;
+    }
+  } @else if $canvas == max-mobile {
+    $xs-mobile: $S - 1;
+    @media only screen and (max-width: $xs-mobile) {
+      @content;
+    }
+  } @else if $canvas == max-tablet {
+    $tablet: $M - 1;
+    @media only screen and (max-width: $tablet) {
+      @content;
+    }
+  } @else if $canvas == max-desktop {
+    @media only screen and (max-width: $L) {
+      @content;
+    }
+  } @else if $canvas == max-mid {
+    @media only screen and (min-width: $M) and (max-width: $L) {
+      @content;
+    }
+  }
+}

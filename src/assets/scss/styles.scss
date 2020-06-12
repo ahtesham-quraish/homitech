@@ -1,0 +1,22 @@
+/**************************************
+Load Sass
+**************************************/
+
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+/*fonts*/
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+/*libraries*/
+@import "custom/_custom-variables";
+@import "custom/_reset";
+
+/*layouts*/
+@import "layouts/header";
+// @import "layouts/main-content";
+/*Components*/
+// @import "components/home";
+@import "components/registration";
+
+/**************************************
+Styles
+**************************************/
