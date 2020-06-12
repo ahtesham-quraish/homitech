@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Registration from "../containers/Auth/Registration";
+// we can make the config file and import the urls from that configuration
 const ROUTES = [
   {
     path: "/",
