@@ -1,34 +1,22 @@
 import React, { useContext, useEffect } from "react";
 import { FormCtx } from "../Form";
-import { CountryDropdown } from "react-country-region-selector";
 import PropTypes from "prop-types";
 
 const Button = (props) => {
+  const { id, loadingText, displayName, classes, sendRequest } = props;
   const {
-    id,
-    loadingText,
-    loadingClass,
-    displayName,
-    classes,
-    sendRequest,
-  } = props;
-  const {
-    setFields,
     addField,
     fields,
-    validateField,
     isFetching,
     setFormData,
     validateForm,
-    clearValidationField,
     errors,
   } = useContext(FormCtx);
   const field = fields[id] || {};
-  const { name, value, events = {} } = field;
-  const fieldError = errors[id];
+  const { value, events = {} } = field;
 
   const { onClick, ...restEvents } = events;
-  const { contClass, fieldClass, errorClass } = classes;
+  const { fieldClass } = classes;
 
   useEffect(() => {
     addField({
@@ -36,12 +24,7 @@ const Button = (props) => {
       value,
     });
   }, []);
-  const fieldProps = {
-    ...restEvents,
-    id,
-    value,
-    className: fieldClass,
-  };
+
   return field && field.value !== undefined ? (
     <div className={`buttonArea `}>
       <input

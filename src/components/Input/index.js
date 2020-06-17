@@ -18,12 +18,10 @@ const Input = (props) => {
     name,
     rows,
     value,
-    key,
     validate,
     isOnBlur,
     validation,
     placeholder,
-    label = "",
     type = "text",
     events = {},
     classes = {},
@@ -31,15 +29,12 @@ const Input = (props) => {
   const fieldError = errors[id];
   const { onChange, onBlur, ...restEvents } = events;
   const {
-    contClass,
     inputClass,
     fieldClass,
     errorClass,
     defaultClass,
     customClasses,
     customContainerClasses,
-    error,
-    labelClass,
   } = classes;
   const handleChange = (event) => {
     try {

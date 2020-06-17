@@ -27,12 +27,7 @@ export default class Registration extends React.Component {
           <h2>Registration</h2>
           {isSubmitted && (
             <div className='alert'>
-              <span
-                className='closebtn'
-                onclick="this.parentElement.style.display='none';"
-              >
-                &times;
-              </span>
+              <span className='closebtn'>&times;</span>
               <strong>Success!</strong> Form has been submitted
             </div>
           )}

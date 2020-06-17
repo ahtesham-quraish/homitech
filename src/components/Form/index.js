@@ -44,7 +44,6 @@ export default class Form extends Component {
   }
   componentDidUpdate(preProps) {
     const { apiResponse } = this.props;
-    console.log(apiResponse);
     if (preProps.apiResponse !== apiResponse && apiResponse === 200) {
       this.setState(
         {
