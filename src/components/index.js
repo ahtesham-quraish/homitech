@@ -1,3 +1,4 @@
+// All inputs are used here
 import Input from "./Input";
 import Form from "./Form";
 import CountryList from "./CountryList";
